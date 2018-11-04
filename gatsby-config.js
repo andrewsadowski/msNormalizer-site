@@ -1,8 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'msNormalizer',
   },
   plugins: [
+    'gatsby-plugin-styled-components',
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: ['Abril Fatface', 'Rajdhani'],
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
