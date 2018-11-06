@@ -9,6 +9,7 @@ const CardContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid black;
 `
 
 export default class Card extends Component {
