@@ -7,9 +7,11 @@ import Img from '../images/msNormalizer.png'
 
 const CardContainer = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   border: 1px solid black;
+  border-width: fit-content;
 `
 
 export default class Card extends Component {
