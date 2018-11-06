@@ -10,6 +10,7 @@ const HeaderContainer = styled.div`
 
 const HeaderText = styled.h1`
   font-family: 'Roboto', sans-serif;
+  align-self: center;
 `
 
 const Header = () => (
