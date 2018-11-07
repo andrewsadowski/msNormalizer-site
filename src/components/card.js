@@ -12,6 +12,8 @@ const CardContainer = styled.div`
   align-items: center;
   border: 1px solid black;
   border-width: fit-content;
+  max-width: 500px;
+  margin: auto;
 `
 
 export default class Card extends Component {

@@ -9,7 +9,6 @@ import Card from '../components/card'
 
 const IndexPage = () => (
   <div>
-    <Header />
     <Card />
   </div>
 )
