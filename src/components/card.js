@@ -14,7 +14,7 @@ const CardContainer = styled.div`
   border-width: fit-content;
   max-width: 500px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 75px;
 
   &:hover {
     box-shadow: 2px 10px;

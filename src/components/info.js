@@ -10,6 +10,7 @@ const HeaderInfo = styled.h1`
   font-family: 'Roboto';
   text-align: center;
   line-height: 1;
+  font-size: 20px;
 `
 
 export default class info extends Component {
