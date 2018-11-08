@@ -7,10 +7,9 @@ import Card from '../components/card'
 export default class IndexPage extends Component {
   render() {
     return (
-      <div>
+      <Fragment>
         <Card />
- 
-      </div>
+      </Fragment>
     )
   }
 }
