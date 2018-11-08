@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import GifDir from '../images/msNorm_dir.gif'
-import GifSingle from '../images/msNorm_singleFile.gif'
+import GifDir from '../images/msNormalizer_Directory.gif'
+import GifSingle from '../images/msNormalizer_SingleFile.gif'
 
 const ExampleContainer = styled.div`
   display: flex;
@@ -9,14 +9,24 @@ const ExampleContainer = styled.div`
   flex-direction: column;
 `
 
-const ExampleGif = styled.img``
+const ExampleHeader = styled.p`
+  align-self: center;
+  font-family: 'Roboto', sans-serif;
+`
+
+const ExampleGif = styled.img`
+  height: auto;
+  width: auto;
+`
 
 export default class Examples extends Component {
   render() {
     return (
       <ExampleContainer>
-        <p>Examples</p>
+        <ExampleHeader>Examples</ExampleHeader>
+        <ExampleHeader>Process a single file as follows:</ExampleHeader>
         <ExampleGif src={GifSingle} />
+        <ExampleHeader>Process an entire directory like this: </ExampleHeader>
         <ExampleGif src={GifDir} />
       </ExampleContainer>
     )
