@@ -11,19 +11,24 @@ const ExampleContainer = styled.div`
 
 const ExampleHeader = styled.p`
   align-self: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto:500b', sans-serif;
+  /* font-weight: ${props => (props.bold ? '500b' : bold)}; */
+  padding: 0;
 `
 
 const ExampleGif = styled.img`
+  padding: 0;
+  align-self: center;
   height: auto;
   width: auto;
+  max-width: 650px;
 `
 
 export default class Examples extends Component {
   render() {
     return (
       <ExampleContainer>
-        <ExampleHeader>Examples</ExampleHeader>
+        <ExampleHeader bold>Examples</ExampleHeader>
         <ExampleHeader>Process a single file as follows:</ExampleHeader>
         <ExampleGif src={GifSingle} />
         <ExampleHeader>Process an entire directory like this: </ExampleHeader>

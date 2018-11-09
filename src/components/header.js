@@ -10,6 +10,8 @@ const HeaderContainer = styled.div`
 
 const HeaderText = styled.h1`
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
   align-self: center;
 `
 
