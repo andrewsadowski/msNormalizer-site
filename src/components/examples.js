@@ -11,8 +11,8 @@ const ExampleContainer = styled.div`
 
 const ExampleHeader = styled.p`
   align-self: center;
-  font-family: 'Roboto:500b', sans-serif;
-  /* font-weight: ${props => (props.bold ? '500b' : bold)}; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: ${props => (props.bold ? '500b' : 'bold')};
   padding: 0;
 `
 
