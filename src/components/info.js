@@ -7,6 +7,7 @@ const HeaderContainer = styled.div`
 `
 
 const HeaderInfo = styled.h1`
+  padding: 5px;
   font-family: 'Roboto';
   text-align: center;
   line-height: 1;
@@ -18,7 +19,7 @@ export default class info extends Component {
     return (
       <HeaderContainer>
         <HeaderInfo>
-          Fix non-continuous MS values in SubRip(srt) files.
+          Fix non-continuous MS time values in SubRip(srt) files.
         </HeaderInfo>
       </HeaderContainer>
     )
