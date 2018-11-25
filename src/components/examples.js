@@ -12,8 +12,24 @@ const ExampleContainer = styled.div`
 const ExampleHeader = styled.p`
   align-self: center;
   font-family: 'Roboto', sans-serif;
-  font-weight: ${props => (props.bold ? '500b' : 'bold')};
+  font-weight: ${props => (props.bold ? '500b' : 'normal')};
+  font-size: 20px;
   padding: 0;
+`
+const ExampleSection = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  @media (max-width: 1450px) {
+    flex-direction: column;
+  }
+`
+
+const ExampleGifContainer = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  padding: 15px;
 `
 
 const ExampleGif = styled.img`
@@ -29,10 +45,18 @@ export default class Examples extends Component {
     return (
       <ExampleContainer>
         <ExampleHeader bold>Examples</ExampleHeader>
-        <ExampleHeader>Process a single file as follows:</ExampleHeader>
-        <ExampleGif src={GifSingle} />
-        <ExampleHeader>Process an entire directory like this: </ExampleHeader>
-        <ExampleGif src={GifDir} />
+        <ExampleSection>
+          <ExampleGifContainer>
+            <ExampleHeader>Process a single file as follows:</ExampleHeader>
+            <ExampleGif src={GifSingle} />
+          </ExampleGifContainer>
+          <ExampleGifContainer>
+            <ExampleHeader>
+              Process an entire directory like this:{' '}
+            </ExampleHeader>
+            <ExampleGif src={GifDir} />
+          </ExampleGifContainer>
+        </ExampleSection>
       </ExampleContainer>
     )
   }
