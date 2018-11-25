@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import { Spring } from 'react-spring'
 
 import Info from './info'
-import Img from '../images/msNormalizer.png'
+import MSImg from '../images/msNormalizer.png'
+import NPMImg from '../images/npm_logo.svg'
 
 const CardContainer = styled.div`
   display: flex;
@@ -45,8 +46,9 @@ export default class Card extends Component {
               onMouseEnter={() => this.toggle()}
               onMouseLeave={() => this.toggle()}
             >
-              <img src={Img} />
+              <img src={MSImg} />
               <Info />
+              {/* <img src={NPMImg} /> */}
             </CardContainer>
           )}
         </Spring>
