@@ -11,9 +11,10 @@ const ExampleContainer = styled.div`
 
 const ExampleHeader = styled.p`
   align-self: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: ${props => (props.bold ? '500b' : 'normal')};
-  font-size: 20px;
+  font-family: 'Roboto\:900i', sans-serif;
+  font-weight: ${props => (props.bold ? 900 : 'normal')};
+  font-style: ${props => (props.italic ? 'italic' : null)};
+  font-size: ${props => (props.big ? '35px' : '20px')};
   padding: 0;
 `
 const ExampleSection = styled.div`
@@ -44,7 +45,9 @@ export default class Examples extends Component {
   render() {
     return (
       <ExampleContainer>
-        <ExampleHeader bold>Examples</ExampleHeader>
+        <ExampleHeader bold italic big>
+          Examples
+        </ExampleHeader>
         <ExampleSection>
           <ExampleGifContainer>
             <ExampleHeader>Process a single file as follows:</ExampleHeader>

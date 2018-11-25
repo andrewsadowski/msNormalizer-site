@@ -3,13 +3,13 @@ module.exports = {
     title: 'msNormalizer',
   },
   plugins: [
-    'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Roboto\:300,300i,300b,500,500b`],
+        fonts: [`Roboto\:300,900,900i`],
       },
     },
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
