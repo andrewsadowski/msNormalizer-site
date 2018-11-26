@@ -13,6 +13,9 @@ export default class Particle extends Component {
                 enable: false,
               },
             },
+            color: {
+              value: '#182233',
+            },
             size: {
               value: 3,
               random: true,
