@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Particles from 'react-particles-js'
 
-class Particle extends Component {
+export default class Particle extends Component {
   render() {
     return (
       <Particles
