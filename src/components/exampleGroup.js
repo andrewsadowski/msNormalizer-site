@@ -2,18 +2,18 @@ import React, { Component, Fragment } from 'react'
 import styled from 'styled-components'
 
 const ExampleGroupContainer = styled.div`
-  margin: 15px;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   padding: 10px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 `
 
 const WhatContainer = styled.div`
   h1 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 18px;
   }
   p {
@@ -26,7 +26,8 @@ const WhatContainer = styled.div`
 
 const CodeSection = styled.div`
   h1 {
-    font-family: 'Roboto\:900i', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
     font-size: 18px;
   }
 `
@@ -38,6 +39,8 @@ const CodeContainer = styled.div`
   width: fit-content;
   height: fit-content;
   padding: 10px;
+  line-height: 30px;
+  letter-spacing: 0px;
 `
 
 export default class ExampleGroup extends Component {
@@ -51,7 +54,7 @@ export default class ExampleGroup extends Component {
         <CodeSection>
           <h1>Install With:</h1>
           <CodeContainer>
-            <code>npm install -g srt-ms-normalizer</code>
+            <code>$ npm install -g srt-ms-normalizer</code>
           </CodeContainer>
         </CodeSection>
       </ExampleGroupContainer>
