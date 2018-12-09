@@ -34,6 +34,7 @@ const CodeSection = styled.div`
 const CodeContainer = styled.div`
   margin: 10px;
   border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
   width: fit-content;
   height: fit-content;
   padding: 10px;

@@ -8,10 +8,11 @@ const HeaderContainer = styled.div`
 
 const HeaderInfo = styled.h1`
   padding: 5px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
   text-align: center;
   line-height: 1;
-  font-size: 15px;
 `
 
 export default class info extends Component {
