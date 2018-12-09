@@ -6,6 +6,7 @@ import Particles from 'react-particles-js'
 import Card from '../components/card'
 import Examples from '../components/examples'
 import ExampleGroup from '../components/exampleGroup'
+import GithubRibbon from '../components/githubRibbon'
 
 const GlobalStyle = createGlobalStyle`
   body html {
@@ -18,6 +19,7 @@ export default class IndexPage extends Component {
     return (
       <Fragment>
         <GlobalStyle />
+        <GithubRibbon />
         <Card />
         <ExampleGroup />
         <Examples />
