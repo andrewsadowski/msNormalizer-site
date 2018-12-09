@@ -5,7 +5,7 @@ import GifSingle from '../images/msNormalizer_SingleFile.gif'
 
 const ExampleContainer = styled.div`
   display: flex;
-  margin-top: 100px;
+  margin-top: 50px;
   flex-direction: column;
   width: auto;
 `
