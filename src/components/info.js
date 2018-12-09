@@ -11,7 +11,7 @@ const HeaderInfo = styled.h1`
   font-family: 'Roboto';
   text-align: center;
   line-height: 1;
-  font-size: 20px;
+  font-size: 15px;
 `
 
 export default class info extends Component {
@@ -19,7 +19,7 @@ export default class info extends Component {
     return (
       <HeaderContainer>
         <HeaderInfo>
-          Fix non-continuous MS time values in SubRip(srt) files.
+          The easiest way fix non-continuous MS time values in srt files.
         </HeaderInfo>
       </HeaderContainer>
     )
