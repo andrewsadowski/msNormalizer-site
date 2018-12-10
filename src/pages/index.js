@@ -6,11 +6,13 @@ import Particles from 'react-particles-js'
 import Card from '../components/card'
 import Examples from '../components/examples'
 import ExampleGroup from '../components/exampleGroup'
+import Footer from '../components/footer'
 import GithubRibbon from '../components/githubRibbon'
 
 const GlobalStyle = createGlobalStyle`
-  body html {
+  body {
     box-sizing: border-box;
+    background-color: '#f7ecec';
   }
 `
 
@@ -23,6 +25,7 @@ export default class IndexPage extends Component {
         <Card />
         <ExampleGroup />
         <Examples />
+        <Footer />
       </Fragment>
     )
   }

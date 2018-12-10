@@ -21,7 +21,6 @@ const ExampleHeader = styled.p`
 const ExampleSection = styled.div`
   display: flex;
   flex-direction: row;
-
   justify-content: center;
   @media (max-width: 1450px) {
     flex-direction: column;
@@ -33,8 +32,8 @@ const ExampleGifContainer = styled.div`
   flex-direction: column;
   width: 100%;
 
-  /* justify-content: space-around; */
-  padding: 15px;
+  justify-content: space-evenly;
+  padding: 10px;
   margin: 0 auto;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -60,16 +59,19 @@ export default class Examples extends Component {
     return (
       <ExampleContainer>
         <ExampleHeader bold italic big>
-          Examples
+          Examples:
         </ExampleHeader>
+        {/* <ExampleSubHeader>Here are</ExampleSubHeader> */}
         <ExampleSection>
           <ExampleGifContainer>
-            <ExampleHeader>Process a single file as follows:</ExampleHeader>
+            <ExampleHeader>
+              You can process a single file like this:
+            </ExampleHeader>
             <ExampleGif src={GifSingle} />
           </ExampleGifContainer>
           <ExampleGifContainer>
             <ExampleHeader>
-              Process an entire directory like this:{' '}
+              Or process an entire directory like this:{' '}
             </ExampleHeader>
             <ExampleGif src={GifDir} />
           </ExampleGifContainer>
