@@ -8,12 +8,19 @@ const FooterSection = styled.div`
   align-items: center;
 `
 
+const FooterText = styled.p`
+  font-family: 'Roboto', sans-serif;
+  word-break: auto;
+  font-size: 15px;
+  /* width: 200px; */
+`
+
 export default class Footer extends Component {
   render() {
     return (
       <Fragment>
         <FooterSection>
-          <p>Goodbye!</p>
+          <FooterText>Goodbye!</FooterText>
         </FooterSection>
       </Fragment>
     )
