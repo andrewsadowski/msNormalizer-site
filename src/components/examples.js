@@ -59,7 +59,7 @@ export default class Examples extends Component {
     return (
       <ExampleContainer>
         <ExampleHeader bold italic big>
-          Examples: HOYS
+          Examples:
         </ExampleHeader>
         {/* <ExampleSubHeader>Here are</ExampleSubHeader> */}
         <ExampleSection>
