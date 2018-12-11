@@ -11,12 +11,21 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: auto;
+  height: auto;
   align-items: center;
   border: 1px solid black;
   border-width: fit-content;
   max-width: 500px;
   margin: auto;
   margin-top: 75px;
+  @media screen (width: 650px) {
+    max-width: auto;
+    min-width: 100px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+  }
 `
 const ImageContainer = styled.div`
   display: flex;

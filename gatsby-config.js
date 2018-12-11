@@ -10,6 +10,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-styled-components',
+    `gatsby-plugin-remove-serviceworker`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
@@ -32,6 +33,5 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
   ],
 }

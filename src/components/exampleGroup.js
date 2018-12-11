@@ -8,6 +8,13 @@ const ExampleGroupContainer = styled.div`
   padding: 10px;
   justify-content: center;
   align-items: flex-start;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 40px;
+    width: 100%;
+  }
 `
 
 const WhatContainer = styled.div`
@@ -21,6 +28,14 @@ const WhatContainer = styled.div`
     word-break: auto;
     font-size: 15px;
     width: 200px;
+  }
+  @media (max-width: 600px) {
+    p {
+      word-break: normal;
+    }
+
+    width: 400px;
+    height: auto;
   }
 `
 
