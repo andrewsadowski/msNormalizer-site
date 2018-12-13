@@ -15,6 +15,11 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 `
+const FlexContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-self: auto;
+`
 
 export default class IndexPage extends Component {
   render() {
@@ -22,8 +27,12 @@ export default class IndexPage extends Component {
       <Fragment>
         <GlobalStyle />
         <GithubRibbon />
-        <Card />
-        <ExampleGroup />
+        <FlexContainer>
+          <Card />
+        </FlexContainer>
+        <FlexContainer>
+          <ExampleGroup />
+        </FlexContainer>
         <SectionBorder />
         <Examples />
         <SectionBorder />

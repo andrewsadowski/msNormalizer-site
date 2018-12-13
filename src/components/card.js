@@ -10,15 +10,24 @@ import GHImg from '../images/GitHub_Logo.png'
 const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-content: center;
   width: auto;
   height: auto;
   align-items: center;
   border: 1px solid black;
   border-width: fit-content;
-  max-width: 500px;
-  margin: auto;
+  max-width: 1000px;
+  padding: 10px;
+  /* margin: auto; */
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 75px;
+  @media screen (width: 1300px) {
+    min-width: 100px;
+    background: grey;
+    padding: 10px;
+  }
   @media screen (width: 650px) {
     max-width: auto;
     min-width: 100px;
