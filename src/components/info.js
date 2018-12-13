@@ -6,13 +6,16 @@ const HeaderContainer = styled.div`
   justify-content: center;
 `
 
-const HeaderInfo = styled.h1`
+const HeaderInfo = styled.p`
   padding: 5px;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 300;
   text-align: center;
   line-height: 1;
+  @media screen (width: 750px) {
+    font-size: 16px;
+  }
 `
 
 export default class info extends Component {
