@@ -24,7 +24,7 @@ export default class Footer extends Component {
       <Fragment>
         <FooterSection>
           <FooterText>
-            Tell me what you think{' '}
+            Tell me what you think, or contribute{' '}
             <a href="https://github.com/andrewsadowski/SRT-Millisecond-Normalizer/issues">
               here
             </a>
