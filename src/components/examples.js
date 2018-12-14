@@ -33,7 +33,7 @@ const ExampleGifContainer = styled.div`
   width: 100%;
 
   justify-content: space-evenly;
-  padding: 10px;
+  padding: 2px;
   margin: 0 auto;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -50,7 +50,7 @@ const ExampleGif = styled.img`
   padding: 0;
   align-self: center;
   height: auto;
-  width: 75%;
+  width: 85%;
   max-width: 100%;
 `
 
