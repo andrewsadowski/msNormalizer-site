@@ -13,7 +13,7 @@ const HeaderInfo = styled.p`
   font-weight: 300;
   text-align: center;
   line-height: 1;
-  @media screen (width: 750px) {
+  @media only screen and (max-width: 650px){
     font-size: 16px;
   }
 `
