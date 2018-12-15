@@ -23,14 +23,14 @@ const CardContainer = styled.div`
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 75px;
-  @media screen (width: 1300px) {
+  @media only screen and (max-width: 1300px) {
     min-width: 100px;
-    background: grey;
     padding: 10px;
+    margin-top: 20px;
   }
-  @media screen (width: 650px) {
+  @media only screen and (max-width: 650px) {
     max-width: auto;
-    min-width: 100px;
+    min-width: auto;
     height: auto;
     padding: 10px;
     margin: 10px;
