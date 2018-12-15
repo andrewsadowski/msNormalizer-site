@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import styled from 'styled-components'
 import { Spring } from 'react-spring'
+import Img from 'gatsby-image'
 
 import Info from './info'
 import MSImg from '../images/msNormalizer.png'
@@ -52,8 +53,11 @@ const Image = styled.img`
 `
 
 export default class Card extends Component {
-  state = {
-    hover: false,
+  constructor(props) {
+    super(props)
+    this.state = {
+      hover: false,
+    }
   }
   toggle = () => {
     return this.setState(state => {
@@ -64,6 +68,7 @@ export default class Card extends Component {
   }
   render() {
     const { hover } = this.state
+    const HeaderImg = this.props.headerImg
     return (
       <Fragment>
         <Spring
@@ -79,7 +84,7 @@ export default class Card extends Component {
               onMouseEnter={() => this.toggle()}
               onMouseLeave={() => this.toggle()}
             >
-              <img src={MSImg} />
+              <Img fluid={HeaderImg} />
               <Info />
               <ImageContainer>
                 <a href="https://www.npmjs.com/package/srt-ms-normalizer">
