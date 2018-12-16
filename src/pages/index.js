@@ -1,7 +1,8 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
-import { Link } from 'gatsby'
-import Particles from 'react-particles-js'
+import { Helmet } from 'react-helmet'
+import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 
 import Card from '../components/card'
 import Examples from '../components/examples'
@@ -21,23 +22,38 @@ const FlexContainer = styled.div`
   align-self: auto;
 `
 
-export default class IndexPage extends Component {
-  render() {
-    return (
-      <Fragment>
-        <GlobalStyle />
-        <GithubRibbon />
-        <FlexContainer>
-          <Card />
-        </FlexContainer>
-        <FlexContainer>
-          <ExampleGroup />
-        </FlexContainer>
-        <SectionBorder />
-        <Examples />
-        <SectionBorder />
-        <Footer />
-      </Fragment>
-    )
-  }
+const HomePage = ({ data }) => {
+  const HeaderImg = data.file.childImageSharp.fluid
+
+  return (
+    <Fragment>
+      <Helmet />
+      <GlobalStyle />
+      <GithubRibbon />
+      <FlexContainer>
+        <Card headerImg={HeaderImg} />
+      </FlexContainer>
+      <FlexContainer>
+        <ExampleGroup />
+      </FlexContainer>
+      <SectionBorder />
+      <Examples />
+      <SectionBorder />
+      <Footer />
+    </Fragment>
+  )
 }
+
+export default HomePage
+
+export const query = graphql`
+  query {
+    file(relativePath: { regex: "/msNormalizer.png/" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

@@ -5,7 +5,7 @@ import GifSingle from '../images/msNormalizer_SingleFile.gif'
 
 const ExampleContainer = styled.div`
   display: flex;
-  margin-top: 50px;
+  margin-top: 25px;
   flex-direction: column;
   width: auto;
 `
@@ -31,7 +31,6 @@ const ExampleGifContainer = styled.div`
   display: inline-flex;
   flex-direction: column;
   width: 100%;
-
   justify-content: space-evenly;
   padding: 2px;
   margin: 0 auto;
@@ -61,7 +60,6 @@ export default class Examples extends Component {
         <ExampleHeader bold italic big>
           Examples:
         </ExampleHeader>
-        {/* <ExampleSubHeader>Here are</ExampleSubHeader> */}
         <ExampleSection>
           <ExampleGifContainer>
             <ExampleHeader>

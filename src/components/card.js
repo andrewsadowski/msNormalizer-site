@@ -45,7 +45,6 @@ const ImageContainer = styled.div`
 
 const HeaderIMG = styled(GatsbyImage)`
   margin: auto;
-  position: fixed;
   height: fit-content;
   width: 100%;
 `
