@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
+import { Helmet } from 'react-helmet'
 import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 
 import Card from '../components/card'
 import Examples from '../components/examples'
@@ -22,11 +24,13 @@ const FlexContainer = styled.div`
 
 const HomePage = ({ data }) => {
   const HeaderImg = data.file.childImageSharp.fluid
+
   return (
     <Fragment>
+      <Helmet />
       <GlobalStyle />
       <GithubRibbon />
-      <Img fluid={HeaderImg} />
+      {/* <Img fluid={HeaderImg} /> */}
       <FlexContainer>
         <Card headerImg={HeaderImg} />
       </FlexContainer>
@@ -47,8 +51,8 @@ export const query = graphql`
   query {
     file(relativePath: { regex: "/msNormalizer.png/" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }

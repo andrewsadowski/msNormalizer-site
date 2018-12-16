@@ -7,6 +7,7 @@ import Info from './info'
 import MSImg from '../images/msNormalizer.png'
 import NPMImg from '../images/npm_logo.svg'
 import GHImg from '../images/GitHub_Logo.png'
+import GatsbyImage from 'gatsby-image'
 
 const CardContainer = styled.div`
   display: flex;
@@ -40,6 +41,13 @@ const CardContainer = styled.div`
 const ImageContainer = styled.div`
   display: flex;
   justify-items: row;
+`
+
+const HeaderIMG = styled(GatsbyImage)`
+  margin: auto;
+  position: fixed;
+  height: fit-content;
+  width: auto;
 `
 
 const Image = styled.img`
@@ -84,7 +92,7 @@ export default class Card extends Component {
               onMouseEnter={() => this.toggle()}
               onMouseLeave={() => this.toggle()}
             >
-              <Img fluid={HeaderImg} />
+              <HeaderIMG fluid={HeaderImg} />
               <Info />
               <ImageContainer>
                 <a href="https://www.npmjs.com/package/srt-ms-normalizer">
