@@ -13,12 +13,12 @@ const HeaderInfo = styled.p`
   font-weight: 300;
   text-align: center;
   line-height: 1;
-  @media only screen and (max-width: 650px){
+  @media only screen and (max-width: 650px) {
     font-size: 16px;
   }
 `
 
-export default class info extends Component {
+export default class Info extends Component {
   render() {
     return (
       <HeaderContainer>
