@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 import { Helmet } from 'react-helmet'
-import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 
 import Card from '../components/card'

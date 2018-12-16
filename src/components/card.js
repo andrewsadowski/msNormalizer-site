@@ -4,7 +4,6 @@ import { Spring } from 'react-spring'
 import Img from 'gatsby-image'
 
 import Info from './info'
-import MSImg from '../images/msNormalizer.png'
 import NPMImg from '../images/npm_logo.svg'
 import GHImg from '../images/GitHub_Logo.png'
 import GatsbyImage from 'gatsby-image'
@@ -19,7 +18,7 @@ const CardContainer = styled.div`
   align-items: center;
   border: 1px solid black;
   border-width: fit-content;
-  max-width: 1000px;
+  max-width: 2500px;
   padding: 10px;
   /* margin: auto; */
   margin-left: 20px;
