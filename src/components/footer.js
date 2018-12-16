@@ -17,8 +17,6 @@ const FooterText = styled.p`
   /* width: 200px; */
 `
 
-const SpecializedLink = styled.a``
-
 export default class Footer extends Component {
   render() {
     return (
