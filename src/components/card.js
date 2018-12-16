@@ -47,7 +47,7 @@ const HeaderIMG = styled(GatsbyImage)`
   margin: auto;
   position: fixed;
   height: fit-content;
-  width: auto;
+  width: 100%;
 `
 
 const Image = styled.img`
