@@ -26,7 +26,14 @@ const HomePage = ({ data }) => {
 
   return (
     <Fragment>
-      <Helmet />
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>msNormalizer</title>
+        <meta
+          name="description"
+          content="Fixing broken subtitle timestamps since 2017"
+        />
+      </Helmet>
       <GlobalStyle />
       <GithubRibbon />
       <FlexContainer>
