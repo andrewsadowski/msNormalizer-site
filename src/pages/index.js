@@ -13,6 +13,8 @@ import GithubRibbon from '../components/githubRibbon'
 const GlobalStyle = createGlobalStyle`
   body {
     box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
   }
 `
 const FlexContainer = styled.div`

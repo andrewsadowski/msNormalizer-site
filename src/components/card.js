@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import styled from 'styled-components'
 import { Spring } from 'react-spring'
-import Img from 'gatsby-image'
 
 import Info from './info'
 import NPMImg from '../images/npm_logo.svg'
@@ -20,16 +19,15 @@ const CardContainer = styled.div`
   border-width: fit-content;
   max-width: 2500px;
   padding: 10px;
-  /* margin: auto; */
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 75px;
   @media only screen and (max-width: 1300px) {
     min-width: 100px;
-    padding: 10px;
     margin-top: 20px;
   }
   @media only screen and (max-width: 650px) {
+    overflow: hidden;
     max-width: auto;
     min-width: auto;
     height: auto;
@@ -46,6 +44,10 @@ const HeaderIMG = styled(GatsbyImage)`
   margin: auto;
   height: fit-content;
   width: 100%;
+  position: relative;
+  @media only screen and (max-width: 650px) {
+    z-index: -1;
+  }
 `
 
 const Image = styled.img`
