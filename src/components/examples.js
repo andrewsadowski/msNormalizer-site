@@ -37,7 +37,6 @@ const ExampleGifContainer = styled.div`
   @media (max-width: 960px) {
     flex-direction: column;
     img {
-      /* max-width: 940px; */
       flex-direction: column;
       align-self: center;
     }
