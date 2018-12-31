@@ -1,5 +1,5 @@
 {
-  "name": "msNormalizer",
+  "name": "msnormalizer",
   "description": "Fix non-continuous timestamps in your subtitles",
   "version": "1.0.0",
   "author": "Andrew N Sadowski",

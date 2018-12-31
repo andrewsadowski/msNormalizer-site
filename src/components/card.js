@@ -18,6 +18,7 @@ const CardContainer = styled.div`
   border: 1px solid black;
   border-width: fit-content;
   max-width: 2500px;
+  overflow: hidden;
   padding: 10px;
   margin-left: 20px;
   margin-right: 20px;
@@ -38,6 +39,7 @@ const CardContainer = styled.div`
 const ImageContainer = styled.div`
   display: flex;
   justify-items: row;
+  overflow: hidden;
 `
 
 const HeaderIMG = styled(GatsbyImage)`
@@ -45,6 +47,7 @@ const HeaderIMG = styled(GatsbyImage)`
   height: fit-content;
   width: 100%;
   position: relative;
+  z-index: -1;
   @media only screen and (max-width: 650px) {
     z-index: -1;
   }
