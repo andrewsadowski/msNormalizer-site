@@ -64,7 +64,10 @@ export default class ExampleGroup extends Component {
       <ExampleGroupContainer>
         <WhatContainer>
           <h1>What is it?</h1>
-          <p>This CLI is a tool fixes corrupted MS values</p>
+          <p>
+            This CLI tool fixes <br />
+            overlapping MS values
+          </p>
         </WhatContainer>
         <CodeSection>
           <h1>Install With:</h1>
