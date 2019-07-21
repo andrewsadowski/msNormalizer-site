@@ -18,7 +18,7 @@ const CardContainer = styled.div`
   border: 1px solid black;
   border-width: fit-content;
   max-width: 2500px;
-  overflow: hidden;
+  overflow: visible;
   padding: 10px;
   margin-left: 20px;
   margin-right: 20px;
@@ -44,12 +44,14 @@ const ImageContainer = styled.div`
 
 const HeaderIMG = styled(GatsbyImage)`
   margin: auto;
-  height: fit-content;
+  height: 100%;
   width: 100%;
   position: relative;
   z-index: -1;
+  overflow: hidden;
   @media only screen and (max-width: 650px) {
     z-index: -1;
+    overflow: hidden;
   }
 `
 
