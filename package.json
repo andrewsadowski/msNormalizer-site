@@ -29,9 +29,11 @@
   ],
   "license": "MIT",
   "scripts": {
+    "now-dev": "gatsby develop -p $PORT",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
+    "serve": "gatsby serve",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
