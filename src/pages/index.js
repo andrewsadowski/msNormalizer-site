@@ -12,14 +12,12 @@ import SectionBorder from '../components/sectionBorder'
 import GithubRibbon from '../components/githubRibbon'
 
 const GlobalStyle = createGlobalStyle`
-  .gatsby-image-wrapper {
-    display: contents;
-
+  .gatsby-image-style {
+    overflow: visible;
   }
   body {
     box-sizing: border-box;
     width: 100%;
-    overflow: visible;
   }
 `
 const FlexContainer = styled.div`
@@ -66,7 +64,7 @@ export const query = graphql`
     file(relativePath: { eq: "msNormalizer.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid
         }
       }
     }
