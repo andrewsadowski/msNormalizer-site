@@ -39,7 +39,7 @@ const CardContainer = styled.div`
 const ImageContainer = styled.div`
   display: flex;
   justify-items: row;
-  overflow: hidden;
+  padding-bottom: 2px;
 `
 
 const HeaderIMG = styled(GatsbyImage)`
