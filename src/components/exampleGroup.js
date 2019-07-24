@@ -33,7 +33,9 @@ const WhatContainer = styled.div`
     p {
       word-break: normal;
     }
-
+    br {
+      display: none;
+    }
     width: 400px;
     height: auto;
   }
